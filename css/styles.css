@@ -1,0 +1,199 @@
+
+/* С5: Для елемента <body>задана властивість font-family з домінантним шрифтом на макеті Roboto.
+С6: Вказані альтернативні варіанти шрифта і тип сімейства в кінці переліку font-family в елемента <body>.
+С7: Сімейство шрифтів Roboto явно задане тільки для елемента <body>.
+С8: Для елемента <body>задана властивість color з домінантним на макеті кольором тексту. */
+
+body {
+font-family: "Roboto", sans-serif;
+color: #434455;
+background-color: #FFFFFF;
+}
+
+ul,ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+}
+.header-logo .logo-part {
+color: #2e2f42;
+}
+
+.footer-logo .logo-part {
+    color: #f4f4fd;
+}
+
+.nav-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+
+.contacts {
+    font-style: normal;
+}
+.contacts-link {
+     font-size: 16px;
+     line-height: 1.5;
+    letter-spacing: 0.02em;
+     color: #434455;
+}
+
+/* C3: Інтерактивні елементи (кнопки і посилання) мають активний стан.
+С4: Текст контактів в хедері змінює колір при ховері і фокусі */
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #404bbf;
+}
+
+.hero,
+.footer {
+    background-color: #2e2f42;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
+
+/* С13: Кнопкам задана властивість cursor зі значенням pointer */
+.btn:hover,
+.btn:focus {
+    background: #404bbf;
+}
+.btn {
+    cursor: pointer;
+    background-color: #4d5ae5;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+}
+ 
+.page-main {
+
+
+}
+
+.advantage-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+
+.team-name,
+.portfolio-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+
+.advantage-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #434455;
+}
+
+.team {
+    background-color: #f4f4fd;
+}
+
+.team-title {
+font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+
+.team-item {
+    background-color: #fff;
+}
+
+.team-img {
+
+}
+.team-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+}
+
+.team-role {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #434455;
+}
+
+.portfolio-title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-transform: capitalize;
+        color: #2e2f42;
+}
+
+
+.portfolio-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+
+.portfolio-type {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+.footer-text {
+    font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+}
