@@ -1,8 +1,4 @@
 
-/* С5: Для елемента <body>задана властивість font-family з домінантним шрифтом на макеті Roboto.
-С6: Вказані альтернативні варіанти шрифта і тип сімейства в кінці переліку font-family в елемента <body>.
-С7: Сімейство шрифтів Roboto явно задане тільки для елемента <body>.
-С8: Для елемента <body>задана властивість color з домінантним на макеті кольором тексту. */
 
 body {
 font-family: "Roboto", sans-serif;
@@ -10,13 +6,63 @@ color: #434455;
 background-color: #FFFFFF;
 }
 
+/* reset */
+
 ul,ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
 a {
     text-decoration: none;
+    
 }
+ 
+/* common */
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Header */
+
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -27,6 +73,12 @@ a {
         text-transform: uppercase;
         color: #4d5ae5;
 }
+
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
 .header-logo .logo-part {
 color: #2e2f42;
 }
@@ -35,26 +87,44 @@ color: #2e2f42;
     color: #f4f4fd;
 }
 
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
 .nav-link {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
 .contacts {
     font-style: normal;
+    margin-left: auto;
+
 }
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .contacts-link {
+    display: block;
+    padding: 24px 0;
      font-size: 16px;
      line-height: 1.5;
     letter-spacing: 0.02em;
      color: #434455;
 }
 
-/* C3: Інтерактивні елементи (кнопки і посилання) мають активний стан.
-С4: Текст контактів в хедері змінює колір при ховері і фокусі */
 
 .nav-link:hover,
 .nav-link:focus,
@@ -68,6 +138,10 @@ color: #2e2f42;
     background-color: #2e2f42;
 }
 
+.hero {
+text-align: center;
+}
+
 .hero-title {
     font-weight: 700;
     font-size: 56px;
@@ -75,9 +149,10 @@ color: #2e2f42;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin-bottom: 48px;
 }
 
-/* С13: Кнопкам задана властивість cursor зі значенням pointer */
+
 .btn:hover,
 .btn:focus {
     background: #404bbf;
@@ -86,15 +161,25 @@ color: #2e2f42;
     cursor: pointer;
     background-color: #4d5ae5;
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
 }
  
-.page-main {
 
+/* Advantages Section */
+ 
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
 
+.advantage-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .advantage-title {
@@ -103,24 +188,20 @@ color: #2e2f42;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
-}
-
-.team-name,
-.portfolio-title {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
+        margin-bottom: 8px;
 }
 
 .advantage-text {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
+
+
+
+/* Team Section */
 
 .team {
     background-color: #f4f4fd;
@@ -134,23 +215,36 @@ font-weight: 700;
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+}
 
 .team-item {
     background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    width: calc((100% - 72px) / 4);
+    text-align: center;
+    padding-bottom: 32px; 
 }
 
 .team-img {
-
+display: block; 
+    width: 100%; 
+    height: auto;
+    margin-bottom: 32px;
 }
 .team-name {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #2e2f42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px; 
 }
 
 .team-role {
@@ -162,6 +256,8 @@ font-weight: 700;
         color: #434455;
 }
 
+/* Portfolio Section */
+
 .portfolio-title {
     font-weight: 700;
         font-size: 36px;
@@ -170,8 +266,26 @@ font-weight: 700;
         text-align: center;
         text-transform: capitalize;
         color: #2e2f42;
+        margin-bottom: 72px;
 }
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 24px;
+    row-gap: 48px; 
+}
+
+.portfolio-item {
+width: calc((100% - 48px) / 3);
+    background-color: #fff;
+}
+
+.portfolio-card {
+    border: 1px solid #e7e9fc;
+        border-top: none;
+        padding: 32px 16px;
+}
 
 .portfolio-name {
         font-weight: 500;
@@ -179,6 +293,7 @@ font-weight: 700;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 
 .portfolio-type {
@@ -189,11 +304,18 @@ font-weight: 700;
         color: #434455;
 }
 
+/* Footer */
+
+.footer {
+    padding: 100px 0;
+}
+
 .footer-text {
-    font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        max-width: 264px;
+        margin-top: 16px;
 }
